@@ -210,9 +210,19 @@ void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int
 
 }
 
-int isDebug(){
-	return debug;
-}
+/*void debugPrint(char print[], ...){
+	char* s;
+	int i=0;
+	if(debug == 1){
+		//for(s=&print[0]; *s != '\0'; s++){
+		//	outputBuffer[i]=*s;
+		//	i++;
+		//}
+		//writeData(&outputBuffer[0], i);
+		printf(print, ...);
+	}
+
+}*/
 
 int getMode(){
 	return mode;

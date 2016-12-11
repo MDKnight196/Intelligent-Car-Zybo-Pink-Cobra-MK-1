@@ -1,10 +1,14 @@
-11:56:57 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+12:05:25 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/interupts.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'clockHandler':
+../src/interupts.c:74:2: warning: implicit declaration of function 'isDebug' [-Wimplicit-function-declaration]
+  if (isDebug() == 1){
+  ^
 'Finished building: ../src/interupts.c'
 ' '
 'Building target: PinkCobra_mk1.elf'
@@ -15,9 +19,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 116364	   4436	  24364	 145164	  2370c	PinkCobra_mk1.elf
+ 116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
 'Finished building: PinkCobra_mk1.elf.size'
 ' '
 
-11:56:58 Build Finished (took 720ms)
+12:05:25 Build Finished (took 615ms)
 
