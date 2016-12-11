@@ -1,28 +1,23 @@
-15:07:11 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+11:56:57 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/interupts.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
-../src/interupts.c: In function 'clockHandler':
-../src/interupts.c:87:4: error: too many arguments to function 'debugPrint'
-    debugPrint("\n\r %d \n\r", tempADC);
-    ^
-In file included from ../src/interupts.h:23:0,
-                 from ../src/interupts.c:7:
-../src/operationalMode.h:45:6: note: declared here
- void debugPrint(char print[]);
-      ^
-../src/interupts.c:103:3: error: too many arguments to function 'debugPrint'
-   debugPrint("%d\n\r", center);
-   ^
-In file included from ../src/interupts.h:23:0,
-                 from ../src/interupts.c:7:
-../src/operationalMode.h:45:6: note: declared here
- void debugPrint(char print[]);
-      ^
-make: *** [src/interupts.o] Error 1
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116364	   4436	  24364	 145164	  2370c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
 
-15:07:11 Build Finished (took 271ms)
+11:56:58 Build Finished (took 720ms)
 

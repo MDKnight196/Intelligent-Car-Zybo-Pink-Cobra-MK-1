@@ -42,7 +42,7 @@ void incModeSel();
 int getMode();
 void setManualControl(int speed, int direction);
 void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int PWMSignal, int center, int blackPixelCount);
-//void debugPrint(char print[], ...);
+void debugPrint(char print[], ...);
 
 
 

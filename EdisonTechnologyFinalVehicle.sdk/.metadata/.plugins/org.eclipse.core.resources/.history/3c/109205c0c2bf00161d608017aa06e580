@@ -59,7 +59,7 @@ void SIHandler(void *data, u8 TmrCtrNumber)
 {
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);
-	//debugPrint("\r\n");
+	debugPrint("\r\n");
 	pixelCount=0;
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 0, 0x000006D4);
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 1, 0x00000694);
@@ -71,7 +71,7 @@ void clockHandler(void *data, u8 TmrCtrNumber)
 
 	int tempADC;
 //	u32 StatusEvent;
-	//debugPrint("\n\r back here!");
+	debugPrint("\n\r back here!");
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);
 if(pixelCount < 1){
@@ -84,15 +84,15 @@ else if (pixelCount < 129){
 	XSysMon_StartAdcConversion(SysMonInstPtr);
 	//while ((XSysMon_GetStatus(SysMonInstPtr) & XSM_SR_EOS_MASK) != XSM_SR_EOS_MASK);
 
-			//debugPrint("\n\r %d \n\r", tempADC);
+			debugPrint("\n\r %d \n\r", tempADC);
 				if( tempADC<7500){
 					blackPixelCount++;
 					tempCenter = tempCenter + pixelCount -1;
-					//debugPrint("#");
+					debugPrint("#");
 				}
 					else{
 
-						//debugPrint(" ");
+						debugPrint(" ");
 					}
 			pixelCount++;
 			XTmrCtr_Start(data,TmrCtrNumber);
@@ -100,7 +100,7 @@ else if (pixelCount < 129){
 	else if (pixelCount == 129){
 		center= tempCenter/blackPixelCount;
 		tempCenter = 0;
-		//debugPrint("%d\n\r", center);
+		debugPrint("%d\n\r", center);
 		pixelCount++;
 		ModeOperation(ForwardPWM, BackwardPWM, ServoTimer, PWMSignal, center, blackPixelCount);
 /*		PWMSignal=2538 + cal_PID(center);

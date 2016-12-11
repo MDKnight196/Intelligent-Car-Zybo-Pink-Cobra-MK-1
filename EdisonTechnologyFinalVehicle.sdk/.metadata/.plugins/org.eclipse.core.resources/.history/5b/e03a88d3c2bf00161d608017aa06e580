@@ -59,7 +59,7 @@ void SIHandler(void *data, u8 TmrCtrNumber)
 {
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);
-	//debugPrint("\r\n");
+	debugPrint("\r\n");
 	pixelCount=0;
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 0, 0x000006D4);
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 1, 0x00000694);

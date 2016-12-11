@@ -222,7 +222,7 @@ void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int
 		printf(print, ...);
 	}
 
-}*/
+}/
 
 int getMode(){
 	return mode;

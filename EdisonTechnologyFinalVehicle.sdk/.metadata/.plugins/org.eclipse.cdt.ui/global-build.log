@@ -17513,3 +17513,148 @@ In file included from ../src/interupts.h:23:0,
  void debugPrint(char print[]);
       ^
 make: *** [src/interupts.o] Error 1
+11:53:55 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+../src/operationalMode.c: In function 'debugPrint':
+../src/operationalMode.c:222:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf(print, ...)
+   ^
+../src/operationalMode.c:222:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/operationalMode.c:222:17: error: expected expression before '...' token
+   printf(print, ...)
+                 ^
+../src/operationalMode.c:223:2: error: expected ';' before '}' token
+  }
+  ^
+../src/operationalMode.c:215:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+../src/operationalMode.c:214:8: warning: unused variable 's' [-Wunused-variable]
+  char* s;
+        ^
+make: *** [src/operationalMode.o] Error 1
+11:54:09 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+../src/operationalMode.c: In function 'debugPrint':
+../src/operationalMode.c:222:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf(print, ...);
+   ^
+../src/operationalMode.c:222:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/operationalMode.c:222:17: error: expected expression before '...' token
+   printf(print, ...);
+                 ^
+../src/operationalMode.c:215:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+../src/operationalMode.c:214:8: warning: unused variable 's' [-Wunused-variable]
+  char* s;
+        ^
+make: *** [src/operationalMode.o] Error 1
+11:56:24 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+../src/operationalMode.c: In function 'debugPrint':
+../src/operationalMode.c:222:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf(print, ...);
+   ^
+../src/operationalMode.c:222:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/operationalMode.c:222:17: error: expected expression before '...' token
+   printf(print, ...);
+                 ^
+../src/operationalMode.c:215:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+../src/operationalMode.c:214:8: warning: unused variable 's' [-Wunused-variable]
+  char* s;
+        ^
+make: *** [src/operationalMode.o] Error 1
+11:56:37 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'SIHandler':
+../src/interupts.c:62:2: warning: implicit declaration of function 'debugPrint' [-Wimplicit-function-declaration]
+  debugPrint("\r\n");
+  ^
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+../src/operationalMode.c:213:1: error: unterminated comment
+ /*void debugPrint(char print[], ...){
+ ^
+make: *** [src/operationalMode.o] Error 1
+11:56:48 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/interupts.o: In function `SIHandler':
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:62: undefined reference to `debugPrint'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PinkCobra_mk1.elf] Error 1
+11:56:57 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116364	   4436	  24364	 145164	  2370c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
