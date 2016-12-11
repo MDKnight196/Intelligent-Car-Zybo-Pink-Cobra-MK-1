@@ -324,24 +324,22 @@ void setUPAxiTimers(){
 
 	//**********************XADC
 	SysMonConfigPtr = XSysMon_LookupConfig(SYSMON_DEVICE_ID);
-	if(SysMonConfigPtr == NULL && isDebug()==1) printf("LookupConfig FAILURE\n\r");
+	if(SysMonConfigPtr == NULL) printf("LookupConfig FAILURE\n\r");
 	xStatus = XSysMon_CfgInitialize(SysMonInstPtr, SysMonConfigPtr,SysMonConfigPtr->BaseAddress);
-	if(XST_SUCCESS != xStatus && isDebug()==1) printf("CfgInitialize FAILED\r\n");
+	if(XST_SUCCESS != xStatus) printf("CfgInitialize FAILED\r\n");
 	XSysMon_GetStatus(SysMonInstPtr);
 
 	//*************************
-	if (isDebug() == 1){
-		printf("##### Application Starts #####\n\r");
-		printf("\r\n");
-	}
+	print("##### Application Starts #####\n\r");
+	print("\r\n");
 	xStatus = XTmrCtr_Initialize(&TimerClock,XPAR_AXI_TIMER_0_DEVICE_ID);
-	if(XST_SUCCESS != xStatus && isDebug()==1)
+	if(XST_SUCCESS != xStatus)
 	print("TIMER CLOCK INIT FAILED \n\r");
 	xStatus = XTmrCtr_Initialize(&TimerSI,XPAR_AXI_TIMER_1_DEVICE_ID);
-	if(XST_SUCCESS != xStatus && isDebug()==1)
+	if(XST_SUCCESS != xStatus)
 	print("TIMER CLOCK INIT FAILED \n\r");
 	xStatus = XTmrCtr_Initialize(&SystemTimer , XPAR_AXI_TIMER_2_DEVICE_ID);
-	if(XST_SUCCESS != xStatus && isDebug()==1)
+	if(XST_SUCCESS != xStatus)
 	print("SYSTEM TIMER INIT FAILED \n\r");
 
 
@@ -394,9 +392,8 @@ void setUPAxiTimers(){
 	XTmrCtr_Start(&TimerSI,1);
 	XTmrCtr_Start(&SystemTimer,0);
 	XTmrCtr_Start(&SystemTimer,1);
-	if (isDebug() == 1){
-		printf("timer start \n\r");
-	}
+
+	print("timer start \n\r");
 }
 
 
@@ -435,9 +432,7 @@ XTtcPs setUpTTC(){
 			    	PWMinterval=(PWMintervalMin + PWMintervalMax)/2;
 			    	interval =PWMinterval;
 			    }
-			    if (isDebug() == 1){
-			    	printf("%d\r\n", interval);
-			    }
+			   // printf("%d\r\n", interval);
 			    XTtcPs_SetMatchValue(&Timer, 0, interval);
 
 			    XTtcPs_Start(&Timer);

@@ -435,9 +435,7 @@ XTtcPs setUpTTC(){
 			    	PWMinterval=(PWMintervalMin + PWMintervalMax)/2;
 			    	interval =PWMinterval;
 			    }
-			    if (isDebug() == 1){
-			    	printf("%d\r\n", interval);
-			    }
+			   // printf("%d\r\n", interval);
 			    XTtcPs_SetMatchValue(&Timer, 0, interval);
 
 			    XTtcPs_Start(&Timer);
