@@ -11608,3 +11608,7 @@ con
 11:48:38 INFO  : XSDB server has started successfully.
 11:48:39 INFO  : Processing command line option -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf.
 11:48:39 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:11:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1481476313067,  Project:1481208846953
+12:11:54 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:12:01 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
