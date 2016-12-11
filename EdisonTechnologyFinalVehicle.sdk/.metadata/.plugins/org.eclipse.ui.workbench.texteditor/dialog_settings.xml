@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="bluetooth" key="selection"/>
+		<item value="getDIS" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="getDIS"/>
 			<item value="bluetooth"/>
 			<item value="XTtcPs_SetMatchValue"/>
 			<item value="kd"/>
@@ -15,7 +16,6 @@
 			<item value="InstancePtr"/>
 			<item value="setUPAxiTimers"/>
 			<item value="TMR_Intr_Handler"/>
-			<item value="opMode"/>
 		</list>
 		<list key="replacehistory">
 			<item value="&amp;bluetooth"/>

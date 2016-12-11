@@ -43,6 +43,7 @@ int getMode();
 void setManualControl(int speed, int direction);
 void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int PWMSignal, int center, int blackPixelCount);
 int isDebug();
+void setConnect(int Connect);
 
 
 

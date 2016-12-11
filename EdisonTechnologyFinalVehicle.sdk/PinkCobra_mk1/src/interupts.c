@@ -59,7 +59,9 @@ void SIHandler(void *data, u8 TmrCtrNumber)
 {
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);
-	//debugPrint("\r\n");
+	if (isDebug() == 1){
+		printf("\n\r");
+	}
 	pixelCount=0;
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 0, 0x000006D4);
 	XTmrCtr_SetControlStatusReg(XPAR_AXI_TIMER_0_BASEADDR, 1, 0x00000694);
@@ -88,15 +90,18 @@ else if (pixelCount < 129){
 			if (isDebug() == 1){
 				printf("\n\r %d \n\r", tempADC);
 			}
-				if( tempADC<7500){
-					blackPixelCount++;
-					tempCenter = tempCenter + pixelCount -1;
-					//debugPrint("#");
+			if( tempADC<7500){
+				blackPixelCount++;
+				tempCenter = tempCenter + pixelCount -1;
+				if (isDebug() == 1){
+					printf("#");
 				}
-					else{
-
-						//debugPrint(" ");
-					}
+			}
+			else{
+				if (isDebug() == 1){
+					printf(" ");
+				}
+			}
 			pixelCount++;
 			XTmrCtr_Start(data,TmrCtrNumber);
 		}
@@ -159,20 +164,27 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 
 	if(getMode() == ManualMode){
 		XUartPs_Recv(&bluetooth, &inputBuffer[0], 7);
-		if (inputBuffer[7] == '#'){
-			manSpeed=(inputBuffer[0] == '+' ? ((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0'):(-1*((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0')))+50;
-			if(manSpeed>100){
-				manSpeed=100;
-			}else if(manSpeed <0){
-				manSpeed=0;
+		if(inputBuffer[0]=='^' && inputBuffer[1] == 'C' && inputBuffer[2]=='O' && inputBuffer[3] == 'N' && inputBuffer[4] =='N'){
+			setConnect(1);
 			}
-			manTurn=inputBuffer[4] == '+' ? ((inputBuffer[5]-'0')*10)+(inputBuffer[6]-'0'):(-1*((inputBuffer[5]-'0')*10)+(inputBuffer[6]-'0'));
+		else if (inputBuffer[6] == '#'){
+			manSpeed=(inputBuffer[0] == '+' ? ((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0'):(-1*((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0')));
+			if(manSpeed>50){
+				manSpeed=50;
+			}else if(manSpeed <-50){
+				manSpeed=-50;
+			}
+			manTurn=inputBuffer[3] == '+' ? ((inputBuffer[4]-'0')*10)+(inputBuffer[5]-'0'):(-1*((inputBuffer[4]-'0')*10)+(inputBuffer[5]-'0'));
 			if(manTurn>50){
 				manTurn=50;
 			}else if(manTurn <-50){
 				manTurn=-50;
 			}
 			setManualControl(manSpeed, manTurn);
+		}
+		else if(inputBuffer[0]=='^' && inputBuffer[1] =='D' && inputBuffer[2] == 'I' && inputBuffer[3] == 'S' && inputBuffer[4] == 'C' &&
+				inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N'){
+			setConnect(-1);
 		}
 	}
 	XTmrCtr_Stop(data,TmrCtrNumber);
@@ -184,7 +196,7 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 void GPIO_Intr_Handler(void *InstancePtr)
 {
 	int GPIO_value=0;
-	static int btnLast=0b11;
+	static int GPIOLast=0;
 	static int encoderLast=0b000;
 
 	//disable GPIO interrupts
@@ -196,25 +208,24 @@ void GPIO_Intr_Handler(void *InstancePtr)
 	}
 
 	GPIO_value = XGpio_DiscreteRead(&gpio, 1);
-	if ((GPIO_value & 0b00000000001) == 0 && (btnLast && 0b01) == 0b01){
+	int test1 = GPIO_value & 0b00000000010;
+	int test2 = GPIOLast & 0b00000000010;
+	if ((GPIO_value & 0b00000000001) == 0 && (GPIOLast & 0b00000000001) == 1){
 		incModeSel();
 	}
-
-	if ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10){
+	else if((GPIO_value & 0b00000000010) == 0 && (GPIOLast & 0b00000000010) == 2){
 		updateMode();
 	}
-	if((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
+	else if((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
 		intCnt++;
-
 	}
-	if((GPIO_value & 0b00000000111) == (btnLast | encoderLast) && opMode != 0){
+	else{
 		fitDIS(GPIO_value>>3);
 
 	}
 
 
-	btnLast=GPIO_value & 0b00000000011;
-	encoderLast=GPIO_value & 0b00000000100;
+	GPIOLast=GPIO_value;
 	(void)XGpio_InterruptClear(&gpio, INT_GPIO);
 	//enable GPIO interrupts
 	XGpio_InterruptEnable(&gpio, INT_GPIO);

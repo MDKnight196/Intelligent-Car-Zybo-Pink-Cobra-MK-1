@@ -12,7 +12,7 @@
 #include "Xil_exception.h"
 #include "xttcps.h"
 #include "xil_io.h"
-
+#include "utrasonic.h"
 
 
 
@@ -32,7 +32,8 @@ int modeSel=StandByMode;
 int debug=-1;
 int MSpeed=0;
 int MDirection=0;
-
+int conn=-1;
+int distance;
 void setStandbyMode(){
 	forwardValue=0;
 	backwardsValue =0;
@@ -78,24 +79,26 @@ void updateMode(){
 	}else{
 		display(StandByMode+1);
 		mode=StandByMode;
+		modeSel=StandByMode;
 		debug=-1;
 	}
 }
 void incModeSel(){
 	int reset;
-	if (debug != 1){
-		reset=DebugMode;
-	}else{
-		reset=DebugMode-1;
+	if(mode == StandByMode){
+		if (debug != 1){
+			reset=DebugMode;
+		}else{
+			reset=DebugMode-1;
+		}
+		if(modeSel >= reset ){
+			modeSel=StandByMode+1;
+		}
+		else{
+			modeSel++;
+		}
+		display(modeSel+1);
 	}
-	if(modeSel >= reset ){
-		modeSel=StandByMode+1;
-	}
-	else{
-		modeSel++;
-	}
-
-	display(modeSel+1);
 }
 
 
@@ -141,6 +144,7 @@ void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int
 			previousMode=SpeedMode;
 		}
 		else if (mode == AcuracyMode){
+				distance =getDIS();
 			if (previousMode!=AcuracyMode){
 				XTtcPs_SetMatchValue(&ForwardPWM, 0, 15166);
 				XTtcPs_SetMatchValue(&BackwardPWM, 0, 21666);
@@ -151,9 +155,14 @@ void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int
 				if(offset > 0 ){
 					offset = -offset;
 				}
-
+				if(distance < 24){
+					XTtcPs_SetMatchValue(&ForwardPWM, 0, 21666);
+					XTtcPs_SetMatchValue(&ServoTimer, 0, PWMSignal); //update steering
+				}
+				else{
 				XTtcPs_SetMatchValue(&ForwardPWM, 0, 15166);
 				XTtcPs_SetMatchValue(&ServoTimer, 0, PWMSignal); //update steering
+				}
 				}
 			else if (blackPixelCount> 30){
 				if (startLineCount == 5){
@@ -185,7 +194,23 @@ void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int
 			}
 		}
 		else if (mode ==  ManualMode){
-
+			if(conn==1){
+				if(MSpeed > 0){
+				XTtcPs_SetMatchValue(&ForwardPWM, 0, 21666-MSpeed*400);
+				XTtcPs_SetMatchValue(&BackwardPWM, 0, 21666);
+				}
+				else
+				{
+					XTtcPs_SetMatchValue(&ForwardPWM, 0, 21666);
+					XTtcPs_SetMatchValue(&BackwardPWM, 0, 21666+MSpeed*400);
+				}
+				XTtcPs_SetMatchValue(&ServoTimer, 0, 2538 + MDirection *8);
+			}
+			else{
+				XTtcPs_SetMatchValue(&ForwardPWM, 0, 21666);
+				XTtcPs_SetMatchValue(&BackwardPWM, 0, 21666);
+				XTtcPs_SetMatchValue(&ServoTimer, 0, 2538);
+			}
 		}
 		else if (mode == DebugMode){
 			if (previousMode!=AcuracyMode){
@@ -222,4 +247,8 @@ void setManualControl(int speed, int direction){
 	MSpeed=speed;
 	MDirection=direction;
 
+}
+
+void setConnect(int Connect){
+	conn=Connect;
 }

@@ -11612,3 +11612,1210 @@ con
 12:11:54 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf is now different from the local copy.
 		 The local copy will be replaced with the source specification and your workspace will be updated.
 12:12:01 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+12:46:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:46:17 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:46:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:46:21 INFO  : 'fpga -state' command is executed.
+12:46:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:21 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+12:46:21 INFO  : 'jtag frequency' command is executed.
+12:46:21 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:46:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:46:22 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:46:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:46:22 INFO  : 'stop' command is executed.
+12:46:22 INFO  : 'ps7_init' command is executed.
+12:46:22 INFO  : 'ps7_post_config' command is executed.
+12:46:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:46:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:23 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:46:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+12:46:23 INFO  : Memory regions updated for context APU
+12:46:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:23 INFO  : 'con' command is executed.
+12:46:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+12:46:23 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+12:48:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:48:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:48:58 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:49:01 INFO  : Disconnected from the channel tcfchan#1.
+12:49:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:49:02 INFO  : 'fpga -state' command is executed.
+12:49:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:02 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+12:49:02 INFO  : 'jtag frequency' command is executed.
+12:49:02 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:49:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:49:04 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:49:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:49:05 INFO  : 'stop' command is executed.
+12:49:05 INFO  : 'ps7_init' command is executed.
+12:49:05 INFO  : 'ps7_post_config' command is executed.
+12:49:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:49:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:49:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:49:07 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:49:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+12:49:07 INFO  : Memory regions updated for context APU
+12:49:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:49:07 INFO  : 'con' command is executed.
+12:49:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+12:49:07 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+12:53:48 INFO  : Disconnected from the channel tcfchan#2.
+12:53:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:53:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:54:00 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:54:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:54:05 INFO  : 'fpga -state' command is executed.
+12:54:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:05 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+12:54:06 INFO  : 'jtag frequency' command is executed.
+12:54:06 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:54:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:06 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:54:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:06 INFO  : 'stop' command is executed.
+12:54:06 INFO  : 'ps7_init' command is executed.
+12:54:06 INFO  : 'ps7_post_config' command is executed.
+12:54:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:54:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:07 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:54:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+12:54:07 INFO  : Memory regions updated for context APU
+12:54:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:08 INFO  : 'con' command is executed.
+12:54:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+12:54:08 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+12:54:25 INFO  : Disconnected from the channel tcfchan#3.
+12:54:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:54:25 INFO  : 'fpga -state' command is executed.
+12:54:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:25 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+12:54:25 INFO  : 'jtag frequency' command is executed.
+12:54:25 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:54:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:27 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:54:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:27 INFO  : 'stop' command is executed.
+12:54:28 INFO  : 'ps7_init' command is executed.
+12:54:28 INFO  : 'ps7_post_config' command is executed.
+12:54:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:54:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:28 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:54:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+12:54:28 INFO  : Memory regions updated for context APU
+12:54:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:28 INFO  : 'con' command is executed.
+12:54:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+12:54:28 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+12:54:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:54:46 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:54:48 INFO  : Disconnected from the channel tcfchan#4.
+12:54:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+12:54:49 INFO  : 'fpga -state' command is executed.
+12:54:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:49 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+12:54:49 INFO  : 'jtag frequency' command is executed.
+12:54:49 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:54:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:52 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:54:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+12:54:52 INFO  : 'stop' command is executed.
+12:54:53 INFO  : 'ps7_init' command is executed.
+12:54:53 INFO  : 'ps7_post_config' command is executed.
+12:54:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:54:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:54 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:54:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+12:54:54 INFO  : Memory regions updated for context APU
+12:54:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:54:55 INFO  : 'con' command is executed.
+12:54:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+12:54:55 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+13:00:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:00:29 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:00:35 INFO  : Disconnected from the channel tcfchan#5.
+13:00:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:00:35 INFO  : 'fpga -state' command is executed.
+13:00:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:36 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+13:00:36 INFO  : 'jtag frequency' command is executed.
+13:00:36 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:00:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:00:38 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:00:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:00:38 INFO  : 'stop' command is executed.
+13:00:39 INFO  : 'ps7_init' command is executed.
+13:00:39 INFO  : 'ps7_post_config' command is executed.
+13:00:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:00:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:39 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:00:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+13:00:39 INFO  : Memory regions updated for context APU
+13:00:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:40 INFO  : 'con' command is executed.
+13:00:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+13:00:40 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+13:04:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:04:31 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:04:39 INFO  : Disconnected from the channel tcfchan#6.
+13:04:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:04:40 INFO  : 'fpga -state' command is executed.
+13:04:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:40 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+13:04:40 INFO  : 'jtag frequency' command is executed.
+13:04:40 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:04:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:04:42 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:04:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:04:42 INFO  : 'stop' command is executed.
+13:04:43 INFO  : 'ps7_init' command is executed.
+13:04:43 INFO  : 'ps7_post_config' command is executed.
+13:04:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:04:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:04:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:04:43 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:04:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+13:04:43 INFO  : Memory regions updated for context APU
+13:04:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:04:43 INFO  : 'con' command is executed.
+13:04:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+13:04:43 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+13:22:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:22:06 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:31:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:31:20 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:34:05 INFO  : Disconnected from the channel tcfchan#7.
+13:40:30 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\temp_xsdb_launch_script.tcl
+13:40:31 INFO  : XSDB server has started successfully.
+13:40:31 INFO  : Processing command line option -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf.
+13:42:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:42:27 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:42:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:42:59 INFO  : 'fpga -state' command is executed.
+13:42:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:59 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+13:42:59 INFO  : 'jtag frequency' command is executed.
+13:42:59 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:42:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:42:59 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:42:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:42:59 INFO  : 'stop' command is executed.
+13:43:00 INFO  : 'ps7_init' command is executed.
+13:43:00 INFO  : 'ps7_post_config' command is executed.
+13:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:43:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:43:00 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+13:43:00 INFO  : Memory regions updated for context APU
+13:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:43:00 INFO  : 'con' command is executed.
+13:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+13:43:00 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+13:45:48 INFO  : Disconnected from the channel tcfchan#1.
+13:45:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:45:48 INFO  : 'fpga -state' command is executed.
+13:45:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:45:55 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:45:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+13:45:57 INFO  : 'fpga -state' command is executed.
+13:45:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:57 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+13:45:57 INFO  : 'jtag frequency' command is executed.
+13:45:57 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:45:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:45:57 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:45:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+13:45:57 INFO  : 'stop' command is executed.
+13:45:58 INFO  : 'ps7_init' command is executed.
+13:45:58 INFO  : 'ps7_post_config' command is executed.
+13:45:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:45:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:59 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:45:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+13:45:59 INFO  : Memory regions updated for context APU
+13:45:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:59 INFO  : 'con' command is executed.
+13:45:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+13:45:59 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:03:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:04:30 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:04:36 INFO  : Disconnected from the channel tcfchan#2.
+15:04:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:04:36 INFO  : 'fpga -state' command is executed.
+15:04:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:36 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:04:36 INFO  : 'jtag frequency' command is executed.
+15:04:36 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:04:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:04:36 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:04:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:04:36 INFO  : 'stop' command is executed.
+15:04:37 INFO  : 'ps7_init' command is executed.
+15:04:37 INFO  : 'ps7_post_config' command is executed.
+15:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:37 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:04:37 INFO  : Memory regions updated for context APU
+15:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:38 INFO  : 'con' command is executed.
+15:04:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:04:38 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:11:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:11:35 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:11:47 INFO  : Disconnected from the channel tcfchan#3.
+15:11:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:11:48 INFO  : 'fpga -state' command is executed.
+15:11:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:48 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:11:48 INFO  : 'jtag frequency' command is executed.
+15:11:48 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:11:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:11:48 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:11:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:11:48 INFO  : 'stop' command is executed.
+15:11:49 INFO  : 'ps7_init' command is executed.
+15:11:49 INFO  : 'ps7_post_config' command is executed.
+15:11:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:11:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:49 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:11:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:11:49 INFO  : Memory regions updated for context APU
+15:11:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:50 INFO  : 'con' command is executed.
+15:11:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:11:50 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:20:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:20:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:20:26 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:20:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:21:11 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:21:14 INFO  : Disconnected from the channel tcfchan#4.
+15:21:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:21:15 INFO  : 'fpga -state' command is executed.
+15:21:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:15 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:21:15 INFO  : 'jtag frequency' command is executed.
+15:21:15 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:21:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:21:15 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:21:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:21:16 INFO  : 'stop' command is executed.
+15:21:17 INFO  : 'ps7_init' command is executed.
+15:21:17 INFO  : 'ps7_post_config' command is executed.
+15:21:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:21:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:17 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:21:17 INFO  : Memory regions updated for context APU
+15:21:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:18 INFO  : 'con' command is executed.
+15:21:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:21:18 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:28:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:28:43 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:28:46 INFO  : Disconnected from the channel tcfchan#5.
+15:28:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:28:47 INFO  : 'fpga -state' command is executed.
+15:28:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:48 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:28:48 INFO  : 'jtag frequency' command is executed.
+15:28:48 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:28:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:28:48 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:28:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:28:48 INFO  : 'stop' command is executed.
+15:28:49 INFO  : 'ps7_init' command is executed.
+15:28:49 INFO  : 'ps7_post_config' command is executed.
+15:28:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:28:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:50 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:28:50 INFO  : Memory regions updated for context APU
+15:28:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:50 INFO  : 'con' command is executed.
+15:28:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:28:50 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:30:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:30:40 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:30:43 INFO  : Disconnected from the channel tcfchan#6.
+15:30:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:30:44 INFO  : 'fpga -state' command is executed.
+15:30:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:44 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:30:44 INFO  : 'jtag frequency' command is executed.
+15:30:44 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:30:44 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:30:44 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:30:44 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:30:44 INFO  : 'stop' command is executed.
+15:30:45 INFO  : 'ps7_init' command is executed.
+15:30:45 INFO  : 'ps7_post_config' command is executed.
+15:30:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:30:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:46 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:30:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:30:46 INFO  : Memory regions updated for context APU
+15:30:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:46 INFO  : 'con' command is executed.
+15:30:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:30:46 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:32:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:32:49 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:33:05 INFO  : Disconnected from the channel tcfchan#7.
+15:33:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:33:05 INFO  : 'fpga -state' command is executed.
+15:33:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:05 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:33:05 INFO  : 'jtag frequency' command is executed.
+15:33:05 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:33:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:33:05 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:33:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:33:05 INFO  : 'stop' command is executed.
+15:33:06 INFO  : 'ps7_init' command is executed.
+15:33:06 INFO  : 'ps7_post_config' command is executed.
+15:33:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:33:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:06 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:33:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:33:06 INFO  : Memory regions updated for context APU
+15:33:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:07 INFO  : 'con' command is executed.
+15:33:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:33:07 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:38:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:38:08 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:38:14 INFO  : Disconnected from the channel tcfchan#8.
+15:38:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:38:14 INFO  : 'fpga -state' command is executed.
+15:38:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:15 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:38:15 INFO  : 'jtag frequency' command is executed.
+15:38:15 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:38:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:38:15 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:38:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:38:15 INFO  : 'stop' command is executed.
+15:38:16 INFO  : 'ps7_init' command is executed.
+15:38:16 INFO  : 'ps7_post_config' command is executed.
+15:38:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:38:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:38:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:38:16 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:38:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:38:16 INFO  : Memory regions updated for context APU
+15:38:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:38:17 INFO  : 'con' command is executed.
+15:38:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:38:17 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:47:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:47:04 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:47:09 INFO  : Disconnected from the channel tcfchan#9.
+15:47:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:47:09 INFO  : 'fpga -state' command is executed.
+15:47:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:09 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:47:09 INFO  : 'jtag frequency' command is executed.
+15:47:09 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:47:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:47:09 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:47:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:47:09 INFO  : 'stop' command is executed.
+15:47:10 INFO  : 'ps7_init' command is executed.
+15:47:10 INFO  : 'ps7_post_config' command is executed.
+15:47:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:47:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:10 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:47:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:47:10 INFO  : Memory regions updated for context APU
+15:47:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:11 INFO  : 'con' command is executed.
+15:47:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:47:11 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+15:50:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:50:24 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:50:28 INFO  : Disconnected from the channel tcfchan#10.
+15:50:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+15:50:29 INFO  : 'fpga -state' command is executed.
+15:50:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:29 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+15:50:29 INFO  : 'jtag frequency' command is executed.
+15:50:29 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:50:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:50:29 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:50:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+15:50:29 INFO  : 'stop' command is executed.
+15:50:30 INFO  : 'ps7_init' command is executed.
+15:50:30 INFO  : 'ps7_post_config' command is executed.
+15:50:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:50:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:31 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:50:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+15:50:31 INFO  : Memory regions updated for context APU
+15:50:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:31 INFO  : 'con' command is executed.
+15:50:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+15:50:31 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:00:18 INFO  : Disconnected from the channel tcfchan#11.
+16:00:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:00:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:00:30 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:01:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:01:33 INFO  : 'fpga -state' command is executed.
+16:01:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:01:33 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:01:33 INFO  : 'jtag frequency' command is executed.
+16:01:33 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:01:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:01:33 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:01:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:01:33 INFO  : 'stop' command is executed.
+16:01:34 INFO  : 'ps7_init' command is executed.
+16:01:34 INFO  : 'ps7_post_config' command is executed.
+16:01:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:01:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:01:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:01:35 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:01:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:01:35 INFO  : Memory regions updated for context APU
+16:01:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:01:35 INFO  : 'con' command is executed.
+16:01:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:01:35 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:03:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:04:00 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:04:04 INFO  : Disconnected from the channel tcfchan#12.
+16:04:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:04:04 INFO  : 'fpga -state' command is executed.
+16:04:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:04 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:04:04 INFO  : 'jtag frequency' command is executed.
+16:04:04 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:04:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:04:04 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:04:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:04:04 INFO  : 'stop' command is executed.
+16:04:04 INFO  : 'ps7_init' command is executed.
+16:04:04 INFO  : 'ps7_post_config' command is executed.
+16:04:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:04:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:05 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:04:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:04:05 INFO  : Memory regions updated for context APU
+16:04:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:05 INFO  : 'con' command is executed.
+16:04:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:04:05 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:10:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:10:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:10:57 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:11:00 INFO  : Disconnected from the channel tcfchan#13.
+16:11:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:11:00 INFO  : 'fpga -state' command is executed.
+16:11:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:11:00 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:11:00 INFO  : 'jtag frequency' command is executed.
+16:11:00 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:11:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:11:00 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:11:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:11:00 INFO  : 'stop' command is executed.
+16:11:01 INFO  : 'ps7_init' command is executed.
+16:11:01 INFO  : 'ps7_post_config' command is executed.
+16:11:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:11:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:01 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:11:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:11:01 INFO  : Memory regions updated for context APU
+16:11:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:02 INFO  : 'con' command is executed.
+16:11:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:11:02 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:12:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:12:11 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:12:15 INFO  : Disconnected from the channel tcfchan#14.
+16:12:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:12:15 INFO  : 'fpga -state' command is executed.
+16:12:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:15 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:12:15 INFO  : 'jtag frequency' command is executed.
+16:12:15 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:12:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:12:15 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:12:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:12:15 INFO  : 'stop' command is executed.
+16:12:16 INFO  : 'ps7_init' command is executed.
+16:12:16 INFO  : 'ps7_post_config' command is executed.
+16:12:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:12:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:16 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:12:16 INFO  : Memory regions updated for context APU
+16:12:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:16 INFO  : 'con' command is executed.
+16:12:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:12:16 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:13:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:13:38 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:13:40 INFO  : Disconnected from the channel tcfchan#15.
+16:13:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:13:41 INFO  : 'fpga -state' command is executed.
+16:13:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:41 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:13:41 INFO  : 'jtag frequency' command is executed.
+16:13:41 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:13:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:13:41 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:13:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:13:41 INFO  : 'stop' command is executed.
+16:13:41 INFO  : 'ps7_init' command is executed.
+16:13:41 INFO  : 'ps7_post_config' command is executed.
+16:13:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:13:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:42 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:13:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:13:42 INFO  : Memory regions updated for context APU
+16:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:42 INFO  : 'con' command is executed.
+16:13:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:13:42 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:15:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:15:30 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:15:34 INFO  : Disconnected from the channel tcfchan#16.
+16:15:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:15:34 INFO  : 'fpga -state' command is executed.
+16:15:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:34 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:15:34 INFO  : 'jtag frequency' command is executed.
+16:15:34 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:15:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:15:34 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:15:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:15:34 INFO  : 'stop' command is executed.
+16:15:35 INFO  : 'ps7_init' command is executed.
+16:15:35 INFO  : 'ps7_post_config' command is executed.
+16:15:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:15:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:35 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:15:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:15:35 INFO  : Memory regions updated for context APU
+16:15:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:35 INFO  : 'con' command is executed.
+16:15:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:15:35 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:16:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:16:57 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:17:00 INFO  : Disconnected from the channel tcfchan#17.
+16:17:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:17:01 INFO  : 'fpga -state' command is executed.
+16:17:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:01 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:17:01 INFO  : 'jtag frequency' command is executed.
+16:17:01 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:17:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:17:01 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:17:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:17:01 INFO  : 'stop' command is executed.
+16:17:02 INFO  : 'ps7_init' command is executed.
+16:17:02 INFO  : 'ps7_post_config' command is executed.
+16:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:03 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:17:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:17:03 INFO  : Memory regions updated for context APU
+16:17:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:03 INFO  : 'con' command is executed.
+16:17:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:17:03 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:18:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:18:54 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:18:58 INFO  : Disconnected from the channel tcfchan#18.
+16:18:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:18:58 INFO  : 'fpga -state' command is executed.
+16:18:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:59 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:18:59 INFO  : 'jtag frequency' command is executed.
+16:18:59 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:18:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:18:59 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:18:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:18:59 INFO  : 'stop' command is executed.
+16:19:00 INFO  : 'ps7_init' command is executed.
+16:19:00 INFO  : 'ps7_post_config' command is executed.
+16:19:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:19:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:01 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:19:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:19:01 INFO  : Memory regions updated for context APU
+16:19:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:01 INFO  : 'con' command is executed.
+16:19:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:19:01 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:20:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:20:56 INFO  : FPGA configured successfully with bitstream "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:20:59 INFO  : Disconnected from the channel tcfchan#19.
+16:21:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786236A" && level==0} -index 1' command is executed.
+16:21:00 INFO  : 'fpga -state' command is executed.
+16:21:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:00 INFO  : Jtag cable 'Digilent Zybo 210279786236A' is selected.
+16:21:00 INFO  : 'jtag frequency' command is executed.
+16:21:00 INFO  : Sourcing of 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:21:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:21:00 INFO  : Hardware design information is loaded from 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:21:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0' command is executed.
+16:21:00 INFO  : 'stop' command is executed.
+16:21:01 INFO  : 'ps7_init' command is executed.
+16:21:01 INFO  : 'ps7_post_config' command is executed.
+16:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:01 INFO  : The application 'C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:21:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+loadhw C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+dow C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/PinkCobra_mk1/Debug/PinkCobra_mk1.elf
+----------------End of Script----------------
+
+16:21:01 INFO  : Memory regions updated for context APU
+16:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:01 INFO  : 'con' command is executed.
+16:21:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786236A"} -index 0
+con
+----------------End of Script----------------
+
+16:21:01 INFO  : Launch script is exported to file 'C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_pinkcobra_mk1.elf.tcl'
+16:27:12 INFO  : Invoking Bootgen: bootgen -image boot.bif -arch zynq -o C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\boot\bootimage\BOOT.bin -w on
+16:27:12 INFO  : Overwriting existing bif file C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\boot\bootimage\boot.bif
+16:27:13 INFO  : Bootgen command execution is done.

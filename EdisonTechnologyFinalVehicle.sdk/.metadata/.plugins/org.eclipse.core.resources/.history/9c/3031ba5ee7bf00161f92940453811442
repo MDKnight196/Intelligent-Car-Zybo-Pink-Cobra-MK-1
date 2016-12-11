@@ -1,0 +1,25 @@
+/*
+ * utrasonic.c
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#include "utrasonic.h"
+
+
+int distance=24;
+
+void fitDIS(int readDIS){
+
+
+	if(readDIS>distance)
+		distance++;
+	else if(readDIS<distance)
+		distance--;*/
+
+}
+
+int getDIS(){
+	return distance;
+}

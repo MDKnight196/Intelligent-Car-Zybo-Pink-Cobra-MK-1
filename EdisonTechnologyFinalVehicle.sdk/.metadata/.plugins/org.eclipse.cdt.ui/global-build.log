@@ -17984,3 +17984,1621 @@ arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
  116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
 'Finished building: PinkCobra_mk1.elf.size'
 ' '
+12:46:20 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:49:00 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:50:56 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117044	   4436	  24364	 145844	  239b4	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+12:54:04 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:54:23 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:54:47 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:59:28 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117108	   4436	  24364	 145908	  239f4	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+13:00:34 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:04:23 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117116	   4436	  24364	 145916	  239fc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+13:04:38 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:07:45 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117116	   4436	  24364	 145916	  239fc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+13:40:34 **** Auto Build of project PinkCobra_mk1_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_3/src"
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_3/src"
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sysmon"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+13:40:49 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/bluetooth.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bluetooth.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/bluetooth.d" -MT"src/bluetooth.o" -o "src/bluetooth.o" "../src/bluetooth.c"
+'Finished building: ../src/bluetooth.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/oLED.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/oLED.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/oLED.d" -MT"src/oLED.o" -o "src/oLED.o" "../src/oLED.c"
+'Finished building: ../src/oLED.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building file: ../src/pixy.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pixy.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pixy.d" -MT"src/pixy.o" -o "src/pixy.o" "../src/pixy.c"
+'Finished building: ../src/pixy.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117116	   4436	  24364	 145916	  239fc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+13:40:52 **** Auto Build of project boot_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_3/src"
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_3/src"
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sysmon"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling XilFFs Library"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+'Finished building libraries'
+13:41:07 **** Auto Build of configuration Debug for project boot ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: boot.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -L"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\boot\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../boot_bsp/ps7_cortexa9_0/lib -o "boot.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: boot.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size boot.elf  |tee "boot.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78224	  12148	  74308	 164680	  28348	boot.elf
+'Finished building: boot.elf.size'
+' '
+13:42:58 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:45:46 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:45:56 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:04:35 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:09:55 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10){
+     ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:10:06 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+     ^
+../src/interupts.c:209:72: error: expected statement before ')' token
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+                                                                        ^
+../src/interupts.c:212:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000100) != encoderLast && opMode != 0)){
+     ^
+../src/interupts.c:212:70: error: expected statement before ')' token
+  if else ((GPIO_value & 0b00000000100) != encoderLast && opMode != 0)){
+                                                                      ^
+../src/interupts.c:215:2: error: 'else' without a previous 'if'
+  else{
+  ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:10:20 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+     ^
+../src/interupts.c:209:72: error: expected statement before ')' token
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+                                                                        ^
+../src/interupts.c:212:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
+     ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:10:24 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:206:69: error: expected statement before ')' token
+  if ((GPIO_value & 0b00000000001) == 0 && (btnLast && 0b01) == 0b01)){
+                                                                     ^
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+     ^
+../src/interupts.c:209:72: error: expected statement before ')' token
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+                                                                        ^
+../src/interupts.c:212:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
+     ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:10:35 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+     ^
+../src/interupts.c:209:72: error: expected statement before ')' token
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10)){
+                                                                        ^
+../src/interupts.c:212:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
+     ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:10:47 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:209:5: error: expected '(' before 'else'
+  if else ((GPIO_value & 0b00000000010) == 0 && (btnLast & 0b10)== 0b10){
+     ^
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+../src/interupts.c:193:13: warning: variable 'encoderLast' set but not used [-Wunused-but-set-variable]
+  static int encoderLast=0b000;
+             ^
+make: *** [src/interupts.o] Error 1
+15:11:02 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117116	   4436	  24364	 145916	  239fc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:11:46 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:19:46 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:206:44: error: 'GPIOLast' undeclared (first use in this function)
+  if ((GPIO_value & 0b00000000001) == 0 && (GPIOLast & 0b00000000001) == 1){
+                                            ^
+../src/interupts.c:206:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+make: *** [src/interupts.o] Error 1
+15:20:16 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:13: error: 'btnLast' undeclared (first use in this function)
+  int test2= btnLast && 0b01;
+             ^
+../src/interupts.c:205:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2= btnLast && 0b01;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+make: *** [src/interupts.o] Error 1
+15:20:21 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117052	   4436	  24364	 145852	  239bc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:20:42 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000001;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117052	   4436	  24364	 145852	  239bc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:21:13 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:24:20 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000001;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117052	   4436	  24364	 145852	  239bc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:24:37 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000001;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117052	   4436	  24364	 145852	  239bc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:26:06 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117180	   4436	  24364	 145980	  23a3c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:26:33 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117244	   4436	  24364	 146044	  23a7c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:26:41 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117308	   4436	  24364	 146108	  23abc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:27:18 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117308	   4436	  24364	 146108	  23abc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:27:38 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:28:12 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:28:45 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:30:42 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:32:40 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000001;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000001;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:33:01 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:33:03 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:37:59 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:205:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:204:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:38:13 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:46:59 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117372	   4436	  24364	 146172	  23afc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:47:07 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:50:27 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:56:36 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:167:126: error: 'inputBufer' undeclared (first use in this function)
+   if(inputBuffer[0]=='^' && inputBuffer[1] == 'C' && inputBuffer[2]=='O' && inputBuffer[3] == 'N' && inputBuffer[4] =='N' && inputBufer[5]=='T'){
+                                                                                                                              ^
+../src/interupts.c:167:126: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c:168:4: warning: implicit declaration of function 'setConnect' [-Wimplicit-function-declaration]
+    setConnect()=1;
+    ^
+../src/interupts.c:168:16: error: lvalue required as left operand of assignment
+    setConnect()=1;
+                ^
+../src/interupts.c:186:5: error: expected ')' before 'inputBuffer'
+     inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N' && inputBufer[8]=='T'){
+     ^
+../src/interupts.c:187:4: error: 'setConnect' undeclared (first use in this function)
+    setConnect=-1;
+    ^
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+make: *** [src/interupts.o] Error 1
+15:57:05 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:167:126: error: 'inputBufer' undeclared (first use in this function)
+   if(inputBuffer[0]=='^' && inputBuffer[1] == 'C' && inputBuffer[2]=='O' && inputBuffer[3] == 'N' && inputBuffer[4] =='N' && inputBufer[5]=='T'){
+                                                                                                                              ^
+../src/interupts.c:167:126: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c:168:4: warning: implicit declaration of function 'setConnect' [-Wimplicit-function-declaration]
+    setConnect()=1;
+    ^
+../src/interupts.c:168:16: error: lvalue required as left operand of assignment
+    setConnect()=1;
+                ^
+../src/interupts.c:187:16: error: lvalue required as left operand of assignment
+    setConnect()=-1;
+                ^
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+make: *** [src/interupts.o] Error 1
+15:57:52 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:168:4: warning: implicit declaration of function 'setConnect' [-Wimplicit-function-declaration]
+    setConnect()=1;
+    ^
+../src/interupts.c:168:16: error: lvalue required as left operand of assignment
+    setConnect()=1;
+                ^
+../src/interupts.c:187:16: error: lvalue required as left operand of assignment
+    setConnect()=-1;
+                ^
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+make: *** [src/interupts.o] Error 1
+15:58:45 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/interupts.o: In function `TMR_Intr_Handler':
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:168: undefined reference to `setConnect'
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:187: undefined reference to `setConnect'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PinkCobra_mk1.elf] Error 1
+15:59:47 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117692	   4436	  24364	 146492	  23c3c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+15:59:51 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117692	   4436	  24364	 146492	  23c3c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:01:33 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:03:32 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117756	   4436	  24364	 146556	  23c7c	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:03:41 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117820	   4436	  24364	 146620	  23cbc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:04:02 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:08:28 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+../src/operationalMode.c:15:24: fatal error: ultrasonic.h: No such file or directory
+ #include "ultrasonic.h"
+                        ^
+compilation terminated.
+make: *** [src/operationalMode.o] Error 1
+16:08:41 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117820	   4436	  24364	 146620	  23cbc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:09:28 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117820	   4436	  24364	 146620	  23cbc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:09:41 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117820	   4436	  24364	 146620	  23cbc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:10:50 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4436	  24364	 146684	  23cfc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:10:58 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:12:07 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4436	  24364	 146684	  23cfc	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:12:14 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:13:39 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:15:05 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:15:33 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:16:47 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+../src/utrasonic.c: In function 'fitDIS':
+../src/utrasonic.c:14:13: warning: variable 'distance' set but not used [-Wunused-but-set-variable]
+  static int distance=24;
+             ^
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117820	   4444	  24364	 146628	  23cc4	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:16:59 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:18:25 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+../src/utrasonic.c: In function 'fitDIS':
+../src/utrasonic.c:19:15: error: expected expression before '/' token
+   distance--;*/
+               ^
+make: *** [src/utrasonic.o] Error 1
+16:18:33 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:18:57 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:20:42 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:20:52 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:20:58 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:27:13 **** Auto Build of configuration Debug for project boot ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c"
+'Finished building: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper_hw_platform_0/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../boot_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: boot.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -L"C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\boot\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../boot_bsp/ps7_cortexa9_0/lib -o "boot.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: boot.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size boot.elf  |tee "boot.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78224	  12148	  74308	 164680	  28348	boot.elf
+'Finished building: boot.elf.size'
+' '

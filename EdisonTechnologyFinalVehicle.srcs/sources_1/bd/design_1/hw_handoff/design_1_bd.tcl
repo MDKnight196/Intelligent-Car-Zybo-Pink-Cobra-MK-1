@@ -1526,22 +1526,22 @@ CONFIG.NUM_PORTS {4} \
 #  -string -flagsOSRD
 preplace port opMode_btn -pg 1 -y 1340 -defaultsOSRD
 preplace port DDR -pg 1 -y 240 -defaultsOSRD
-preplace port encoder -pg 1 -y 1290 -defaultsOSRD
-preplace port ServoPWM -pg 1 -y 340 -defaultsOSRD
-preplace port us_echo -pg 1 -y 1530 -defaultsOSRD
-preplace port LineScanSI -pg 1 -y 100 -defaultsOSRD
-preplace port LineScanClock -pg 1 -y 940 -defaultsOSRD
+preplace port encoder -pg 1 -y 1530 -defaultsOSRD
+preplace port ServoPWM -pg 1 -y 380 -defaultsOSRD
+preplace port us_echo -pg 1 -y 1510 -defaultsOSRD
+preplace port LineScanSI -pg 1 -y 940 -defaultsOSRD
+preplace port LineScanClock -pg 1 -y 100 -defaultsOSRD
 preplace port us_trig -pg 1 -y 1370 -defaultsOSRD
 preplace port vauxp14 -pg 1 -y 1580 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 260 -defaultsOSRD
-preplace port ReversePWM -pg 1 -y 380 -defaultsOSRD
+preplace port ReversePWM -pg 1 -y 340 -defaultsOSRD
 preplace port vauxn14 -pg 1 -y 1560 -defaultsOSRD
 preplace port ForwardPWM -pg 1 -y 360 -defaultsOSRD
 preplace port start_btn -pg 1 -y 1440 -defaultsOSRD
 preplace portBus oLED_rst -pg 1 -y 1240 -defaultsOSRD
 preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 1200 -defaultsOSRD
 preplace inst dist_mem_gen_0 -pg 1 -lvl 4 -y 520 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 3 -y 1570 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -y 1560 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 1080 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 2 -y 1190 -defaultsOSRD
 preplace inst axi_timer_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
@@ -1550,7 +1550,7 @@ preplace inst btn_debounce_toggle_0 -pg 1 -lvl 2 -y 1350 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 3 -y 1360 -defaultsOSRD
 preplace inst axi_gpio_1 -pg 1 -lvl 3 -y 1230 -defaultsOSRD
 preplace inst axi_timer_1 -pg 1 -lvl 3 -y 930 -defaultsOSRD
-preplace inst btn_debounce_toggle_1 -pg 1 -lvl 2 -y 1500 -defaultsOSRD
+preplace inst btn_debounce_toggle_1 -pg 1 -lvl 2 -y 1450 -defaultsOSRD
 preplace inst axi_timer_2 -pg 1 -lvl 3 -y 720 -defaultsOSRD
 preplace inst axi_gpio_2 -pg 1 -lvl 3 -y 530 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 850 -defaultsOSRD
@@ -1558,42 +1558,42 @@ preplace inst processing_system7_0 -pg 1 -lvl 3 -y 330 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 3 2 NJ 240 NJ
 preplace netloc opMode_btn_1 1 0 2 NJ 1340 NJ
 preplace netloc vauxp14_1 1 0 3 NJ 1580 NJ 1580 NJ
-preplace netloc btn_debounce_toggle_0_BTN_O 1 2 1 830
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 730
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 730
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 400 190 NJ 190 1250
+preplace netloc btn_debounce_toggle_0_BTN_O 1 2 1 820
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 760
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 700
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 400 610 NJ 610 1200
 preplace netloc utrasonicDriver_0_trig 1 4 1 NJ
-preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 740
-preplace netloc axi_timer_0_pwm0 1 3 2 1250 90 NJ
-preplace netloc xlconcat_1_dout 1 3 1 1260
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 1100 NJ 1100 NJ 1160 1280
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 710
+preplace netloc axi_timer_0_pwm0 1 3 2 NJ 100 NJ
+preplace netloc xlconcat_1_dout 1 3 1 1220
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 1100 NJ 1100 NJ 830 1210
 preplace netloc axi_gpio_2_gpio_io_o 1 3 1 NJ
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 820
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 700
 preplace netloc axi_gpio_1_gpio_io_o 1 3 2 NJ 1240 NJ
-preplace netloc utrasonicDriver_0_pluseWidth 1 2 3 830 1460 NJ 1460 1540
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 370 580 810
-preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 1 790
-preplace netloc us_echo_1 1 0 4 NJ 1420 NJ 1420 NJ 1450 1310
-preplace netloc encoder_1 1 0 3 NJ 1290 NJ 1290 NJ
-preplace netloc dist_mem_gen_0_spo 1 3 2 NJ 570 1540
+preplace netloc utrasonicDriver_0_pluseWidth 1 2 3 820 1440 NJ 1440 1450
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 370 1280 790
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 1 720
+preplace netloc us_echo_1 1 0 4 NJ 1510 NJ 1510 NJ 1450 NJ
+preplace netloc encoder_1 1 0 3 NJ 1530 NJ 1530 NJ
+preplace netloc dist_mem_gen_0_spo 1 3 2 NJ 570 1450
 preplace netloc vauxn14_1 1 0 3 NJ 1560 NJ 1560 NJ
-preplace netloc xlconcat_0_dout 1 2 1 750
+preplace netloc xlconcat_0_dout 1 2 1 730
 preplace netloc processing_system7_0_FIXED_IO 1 3 2 NJ 260 NJ
-preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 3 2 N 340 NJ
-preplace netloc axi_gpio_0_ip2intc_irpt 1 1 3 420 1110 NJ 1150 1250
+preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 3 2 NJ 340 NJ
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 3 400 1270 NJ 1160 1200
 preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 3 2 NJ 360 NJ
-preplace netloc axi_timer_1_pwm0 1 3 2 1310 100 NJ
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 380
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 30 1110 360 570 800 820 1300
-preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 3 2 1320 350 NJ
+preplace netloc axi_timer_1_pwm0 1 3 2 NJ 940 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 360
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 30 1110 350 1290 780 620 1230
+preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 3 2 NJ 380 NJ
 preplace netloc start_btn_1 1 0 2 NJ 1440 NJ
-preplace netloc btn_debounce_toggle_1_BTN_O 1 2 1 820
-preplace netloc axi_timer_1_interrupt 1 1 3 410 1440 NJ 1440 1270
-preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 780
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 830
-preplace netloc axi_timer_2_interrupt 1 1 3 390 610 NJ 620 1250
-preplace netloc axi_timer_0_interrupt 1 1 3 410 600 NJ 610 1260
-levelinfo -pg 1 0 190 570 1060 1430 1580 -top 0 -bot 1680
+preplace netloc btn_debounce_toggle_1_BTN_O 1 2 1 800
+preplace netloc axi_timer_1_interrupt 1 1 3 400 1110 NJ 1150 1210
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 750
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 820
+preplace netloc axi_timer_2_interrupt 1 1 3 390 1090 NJ 820 1200
+preplace netloc axi_timer_0_interrupt 1 1 3 380 190 NJ 190 1200
+levelinfo -pg 1 0 190 550 1010 1340 1470 -top 0 -bot 1670
 ",
 }
 

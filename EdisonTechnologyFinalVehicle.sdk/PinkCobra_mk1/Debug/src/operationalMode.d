@@ -29,7 +29,7 @@ src/operationalMode.o src/operationalMode.o: ../src/operationalMode.c \
  ../src/bluetooth.h \
  ../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include/xuartps.h \
  ../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include/xuartps_hw.h \
- ../src/PIDcontroller.h
+ ../src/PIDcontroller.h ../src/utrasonic.h
 
 ../src/operationalMode.h:
 
@@ -98,3 +98,5 @@ src/operationalMode.o src/operationalMode.o: ../src/operationalMode.c \
 ../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include/xuartps_hw.h:
 
 ../src/PIDcontroller.h:
+
+../src/utrasonic.h:
