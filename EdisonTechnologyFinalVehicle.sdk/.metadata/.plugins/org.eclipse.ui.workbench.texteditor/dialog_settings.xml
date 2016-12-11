@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="bluetooth" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="bluetooth"/>
+			<item value="XTtcPs_SetMatchValue"/>
+			<item value="kd"/>
+			<item value="Accumulator"/>
+			<item value="InstancePtr"/>
+			<item value="setUPAxiTimers"/>
+			<item value="TMR_Intr_Handler"/>
+			<item value="opMode"/>
+		</list>
+		<list key="replacehistory">
+			<item value="&amp;bluetooth"/>
+			<item value="&amp;pixy"/>
+			<item value="XIicPs_MasterSendPolled"/>
+			<item value="&amp;oLED"/>
+			<item value="OLED_IIC_ADDR"/>
+			<item value="oLED"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1031" key="DIALOG_X_ORIGIN"/>
+		<item value="233" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

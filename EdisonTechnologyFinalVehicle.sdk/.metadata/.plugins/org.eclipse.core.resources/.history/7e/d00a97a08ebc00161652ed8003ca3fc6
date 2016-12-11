@@ -1,0 +1,171 @@
+/*
+ * oLED.c
+ *
+ *  Created on: Dec 5, 2016
+ *      Author: ulab
+ */
+
+#include "oLED.h"
+
+
+
+int setupIIC(u16 deviceId){
+	int status;
+	XIicPs_Config *Config;
+
+	Config = XIicPs_LookupConfig(deviceId);
+	if (NULL == Config){
+		return XST_FAILURE;
+	}
+
+	status = XIicPs_CfgInitialize(&oLED, Config, Config->BaseAddress);
+	if ( status != XST_SUCCESS){
+		return XST_FAILURE;
+	}
+
+
+	XIicPs_SelfTest(&oLED);
+	if ( status != XST_SUCCESS){
+		return XST_FAILURE;
+	}
+
+	XIicPs_SetSClk(&oLED, IIC_SCLK_RATE);
+
+
+	return XST_SUCCESS;
+}
+
+
+int setupoLED(XGpio *rst, XGpio *rom, u16 deviceId){
+	int i, status;
+
+	for(i=0; i<2; i++){
+		message[i]=0;
+	}
+
+	status = setupIIC(deviceId);
+	if ( status != XST_SUCCESS){
+		return XST_FAILURE;
+	}
+
+	XGpio_DiscreteWrite(rst, 1, 1);
+	usleep(5000);
+	XGpio_DiscreteWrite(rst, 1, 0);
+	usleep(10000);
+	XGpio_DiscreteWrite(rst, 1, 1);
+
+	message[0] = I2C_COMMAND;
+
+
+	message[1] = DISPLAYOFF;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = SETDISPLAYCLOCKDIV;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x80;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETMULTIPLEX;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x2F;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETDISPLAYOFFSET;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x0;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = (SETSTARTLINE | 0x0);
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = CHARGEPUMP;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x14;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = NORMALDISPLAY;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = DISPLAYALLONRESUME;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = (SEGREMAP | 0x1);
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = COMSCANDEC;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETCOMPINS;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x12;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETCONTRAST;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x8F;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETPRECHARGE;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0xF1;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = SETVCOMDESELECT;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	message[1] = 0x40;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+
+	message[1] = DISPLAYON;
+	XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+	display(rom, 0);
+	sleep(1);
+	display(rom, 1);
+
+	return XST_SUCCESS;
+	}
+
+void display(XGpio *rom, int opMode){
+	int x, y, btye_addr;
+
+
+	for (y=0; y<6; y++){
+		message[0] = I2C_COMMAND;
+		message[1] = 0xb0|y;
+		XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+		message[1] = ((0x10|(0>>4))+0x02);
+		XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+		message[1] = (0x0f&0);
+		XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+
+		for (x=0; x<64; x++){
+			btye_addr= x+(y*64)+(opMode*384);
+			XGpio_DiscreteWrite(rom, 1, btye_addr);
+
+			message[0] = I2C_DATA;
+			message[1] = XGpio_DiscreteRead(rom, 2);
+			XIicPs_MasterSendPolled(&oLED, &message[0], 2, OLED_IIC_ADDR);
+		}
+	}
+}

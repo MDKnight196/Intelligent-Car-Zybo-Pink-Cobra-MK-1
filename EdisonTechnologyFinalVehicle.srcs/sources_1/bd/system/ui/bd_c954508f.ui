@@ -1,0 +1,62 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port opMode_btn -pg 1 -y 720 -defaultsOSRD
+preplace port DDR -pg 1 -y 440 -defaultsOSRD
+preplace port encoder -pg 1 -y 920 -defaultsOSRD
+preplace port us_echo -pg 1 -y 890 -defaultsOSRD
+preplace port leds_4bits -pg 1 -y 320 -defaultsOSRD
+preplace port us_trig -pg 1 -y 810 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 460 -defaultsOSRD
+preplace port start_btn -pg 1 -y 820 -defaultsOSRD
+preplace portBus oLED_rst -pg 1 -y 210 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 290 -defaultsOSRD
+preplace inst dist_mem_gen_0 -pg 1 -lvl 5 -y 60 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 4 -y 560 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 910 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 740 -defaultsOSRD
+preplace inst utrasonicDriver_0 -pg 1 -lvl 5 -y 820 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst btn_debounce_toggle_0 -pg 1 -lvl 3 -y 730 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 1 -y 610 -defaultsOSRD
+preplace inst btn_debounce_toggle_1 -pg 1 -lvl 3 -y 830 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 530 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 4 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc opMode_btn_1 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc btn_debounce_toggle_0_BTN_O 1 3 1 960
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 3 1 970
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 610
+preplace netloc utrasonicDriver_0_trig 1 5 1 NJ
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 3 1 950
+preplace netloc xlconcat_1_dout 1 1 1 220
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 220 390 600
+preplace netloc axi_gpio_2_gpio_io_o 1 4 1 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 3 1 950
+preplace netloc utrasonicDriver_0_pluseWidth 1 3 3 990 820 NJ 760 1490
+preplace netloc axi_gpio_1_gpio_io_o 1 4 2 NJ 210 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 2 640 430 990
+preplace netloc encoder_1 1 0 4 NJ 920 NJ 920 NJ 920 NJ
+preplace netloc us_echo_1 1 0 5 NJ 890 NJ 890 NJ 890 NJ 830 NJ
+preplace netloc xlconcat_0_dout 1 4 1 1250
+preplace netloc dist_mem_gen_0_spo 1 4 2 NJ 110 1490
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc axi_gpio_0_ip2intc_irpt 1 0 5 20 670 NJ 670 NJ 670 NJ 670 1260
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 620
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 210 380 630 450 980 810 NJ
+preplace netloc axi_gpio_4_GPIO 1 4 2 NJ 320 NJ
+preplace netloc start_btn_1 1 0 3 NJ 820 NJ 820 NJ
+preplace netloc btn_debounce_toggle_1_BTN_O 1 3 1 950
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 3 1 N
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 3 1 960
+preplace netloc axi_timer_0_interrupt 1 0 5 30 680 NJ 680 NJ 660 NJ 660 1250
+levelinfo -pg 1 0 120 410 800 1120 1380 1510 -top 0 -bot 1000
+",
+}
+{
+   da_axi4_cnt: "10",
+   da_board_cnt: "4",
+   da_ps7_cnt: "1",
+}

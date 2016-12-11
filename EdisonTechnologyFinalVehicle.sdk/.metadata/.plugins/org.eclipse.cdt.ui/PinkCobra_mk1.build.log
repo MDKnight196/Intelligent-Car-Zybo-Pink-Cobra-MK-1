@@ -1,0 +1,28 @@
+15:07:11 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'clockHandler':
+../src/interupts.c:87:4: error: too many arguments to function 'debugPrint'
+    debugPrint("\n\r %d \n\r", tempADC);
+    ^
+In file included from ../src/interupts.h:23:0,
+                 from ../src/interupts.c:7:
+../src/operationalMode.h:45:6: note: declared here
+ void debugPrint(char print[]);
+      ^
+../src/interupts.c:103:3: error: too many arguments to function 'debugPrint'
+   debugPrint("%d\n\r", center);
+   ^
+In file included from ../src/interupts.h:23:0,
+                 from ../src/interupts.c:7:
+../src/operationalMode.h:45:6: note: declared here
+ void debugPrint(char print[]);
+      ^
+make: *** [src/interupts.o] Error 1
+
+15:07:11 Build Finished (took 271ms)
+

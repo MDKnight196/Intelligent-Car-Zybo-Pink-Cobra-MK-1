@@ -1,0 +1,17 @@
+/*
+ * operationalMode.h
+ *
+ *  Created on: Dec 7, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_OPERATIONALMODE_H_
+#define SRC_OPERATIONALMODE_H_
+
+
+
+
+int opMode = 0;
+int opMode_select = FIRST_IMAGE;
+
+#endif /* SRC_OPERATIONALMODE_H_ */

@@ -1,0 +1,30 @@
+/*
+ * interupts.h
+ *
+ *  Created on: Dec 5, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_INTERUPTS_H_
+#define SRC_INTERUPTS_H_
+#include <stdio.h>
+#include "platform.h"
+#include "xil_types.h"
+#include "xsysmon.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "Xil_exception.h"
+#include "xttcps.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+
+void SIHandler(void *data, u8 TmrCtrNumber);
+void clockHandler(void *data, u8 TmrCtrNumber);
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+int ScuGicInterrupt_Init(u16 DeviceId);
+void setUPAxiTimers();
+XTtcPs setUpTTC();
+int getCenter();
+
+#endif /* SRC_INTERUPTS_H_ */

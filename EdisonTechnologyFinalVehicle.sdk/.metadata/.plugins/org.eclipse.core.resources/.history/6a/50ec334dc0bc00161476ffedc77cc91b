@@ -1,0 +1,27 @@
+/*
+ * hullEffect.c
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#include "hullEffect.h"
+//ft per sec
+//rev = 6in
+//8 intCnt = rev
+float getDIS(int intCnt){
+	float rev=(float)intCnt/8;
+	float inches=rev * 6;
+	float feet = inches / 12;
+	return feet;
+}
+
+int calSpeed(int intCnt){
+	static float feetLast=0;
+	float feet = getDIS(intCnt) - feetLast;
+	float time=TIME_INTERVAL_MS/1000;
+	float speed=feet/time;
+
+	feetLast=feet;
+	return speed;
+}

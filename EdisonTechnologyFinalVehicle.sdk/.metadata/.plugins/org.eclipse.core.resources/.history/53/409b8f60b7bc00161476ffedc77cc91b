@@ -1,0 +1,24 @@
+/*
+ * bluetooth.h
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_BLUETOOTH_H_
+#define SRC_BLUETOOTH_H_
+
+#include "xuartps.h"
+
+#define BUFFER_SIZE 		100
+#define BLUETOOTH_ID        XPAR_PS7_UART_0_DEVICE_ID
+#define printData(XUartPs *uart, u8 *oBuffer, int numbytes)			XUartPs_Recv(&uart0, &inputBuffer, 1);
+u8 outputBuffer[BUFFER_SIZE];
+u8 inputBuffer;
+XUartPs bluetooth;
+
+int bluetoothSetup(u16 DeviceId);
+int addToString(float value, int index);
+int newline(int index);
+
+#endif /* SRC_BLUETOOTH_H_ */

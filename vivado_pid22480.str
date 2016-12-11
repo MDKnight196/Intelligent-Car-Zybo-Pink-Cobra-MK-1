@@ -1,0 +1,183 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 22480
+
+Current time: 	12/10/16 1:15:35 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	ulab
+User home directory: C:/Users/ulab
+User working directory: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/ulab/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/ulab/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	216 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 477 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.xpr 
+// [GUI Memory]: 41 MB (+40705kb) [00:00:03]
+// [Engine Memory]: 425 MB (+293800kb) [00:00:03]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 513 MB. GUI used memory: 27 MB. Current time: 12/10/16 1:15:37 PM EST
+// [Engine Memory]: 513 MB (+70689kb) [00:00:08]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+6767kb) [00:00:09]
+// [Engine Memory]: 597 MB (+60322kb) [00:00:09]
+// [GUI Memory]: 58 MB (+5882kb) [00:00:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 629 MB (+2981kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Project name: EdisonTechnologyFinalVehicle; location: C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle; part: xc7z010clg400-1
+// [GUI Memory]: 62 MB (+1182kb) [00:00:12]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 933.445 ; gain = 248.105 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+// 'p' command handler elapsed time: 88 seconds
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 66 MB (+1023kb) [00:05:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 39 MB. Current time: 12/10/16 1:23:32 PM EST
+// [Engine Memory]: 662 MB (+1177kb) [00:08:59]
+// [GUI Memory]: 70 MB (+257kb) [00:26:28]
+// [GUI Memory]: 74 MB (+633kb) [00:34:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 40 MB. Current time: 12/10/16 1:53:33 PM EST
+// [GUI Memory]: 78 MB (+505kb) [00:42:41]
+// [GUI Memory]: 82 MB (+237kb) [00:48:02]
+// [GUI Memory]: 88 MB (+1576kb) [00:59:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 38 MB. Current time: 12/10/16 2:23:34 PM EST
+// [GUI Memory]: 92 MB (+31kb) [01:33:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 37 MB. Current time: 12/10/16 2:53:35 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 37 MB. Current time: 12/10/16 3:23:36 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 37 MB. Current time: 12/10/16 3:53:37 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 37 MB. Current time: 12/10/16 4:23:38 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 4:53:39 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 5:23:40 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 5:53:41 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 6:23:42 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 6:53:43 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 7:23:44 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 7:53:45 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 8:23:46 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 8:53:47 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 9:23:48 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 9:53:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 10:23:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 10:53:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 11:23:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/10/16 11:53:53 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 12:23:54 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 12:53:55 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 1:23:56 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 1:53:57 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 2:23:58 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 2:53:59 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 3:24:00 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 3:54:01 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 4:24:02 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 4:54:03 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 5:24:04 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 5:54:05 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 6:24:06 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 6:54:07 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 7:24:08 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 7:54:09 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 8:24:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 8:54:11 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 9:24:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 9:54:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 10:24:14 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 10:54:15 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 37 MB. Current time: 12/11/16 11:24:16 AM EST
+// Elapsed time: 81055 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+// 'p' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 

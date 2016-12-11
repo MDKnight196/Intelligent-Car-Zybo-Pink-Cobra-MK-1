@@ -1,0 +1,75 @@
+/*
+ * PIDcontroller.c
+ *
+ *  Created on: Dec 5, 2016
+ *      Author: ulab
+ */
+
+#include "PIDcontroller.h"
+
+struct PID{
+	float KP;
+	float KI;
+	float KD;
+	int lastInput;
+	int maxOutput;
+	int minOutput;
+	int mid;
+	int output;
+	float rawOutput;
+	float ITerm;
+}Steering;
+
+/**********************************************************************
+*
+*	Initializes PID
+*
+**********************************************************************/
+void init_PID(int KP, int KI, int KD, int Max, int Min, int Mid){
+	Steering.KP = KP;
+	Steering.KI = KI;
+	Steering.KD = KD;
+	Steering.lastInput = Mid + 1;
+	Steering.maxOutput = Max;
+	Steering.minOutput = Min;
+	Steering.mid = Mid;
+	Steering.rawOutput = 0;
+	Steering.output = 0;
+	Steering.ITerm = 0;
+}
+
+/**********************************************************************
+*
+*	Calculates PID
+*
+**********************************************************************/
+int cal_PID(int input){
+	//float output=0;
+	//uart3_putchar(input);
+	//uart3_putchar('\n');
+	volatile float error = input - Steering.mid;
+	//uart3_putchar(error);
+	Steering.ITerm+= (Steering.KI * error);
+	//if(Steering.ITerm > Steering.maxOutput){
+		//Steering.ITerm=Steering.maxOutput;
+	//}
+	//else if(Steering.ITerm < Steering.minOutput) {
+		//Steering.ITerm = Steering.minOutput;
+	//}
+	float DTerm = (input - Steering.lastInput);
+	//Steering.rawOutput = Steering.KP * error + Steering.ITerm + Steering.KD * DTerm;
+	Steering.rawOutput = Steering.KP * error + Steering.ITerm - Steering.KD * DTerm;
+
+	if(Steering.rawOutput > Steering.maxOutput) {
+		Steering.output= Steering.maxOutput;
+	}
+	else if(Steering.rawOutput < Steering.minOutput) {
+		Steering.output = Steering.minOutput;
+	}
+	else {
+		Steering.output = Steering.rawOutput;
+	}
+
+	Steering.lastInput = input;
+	return Steering.output;
+}

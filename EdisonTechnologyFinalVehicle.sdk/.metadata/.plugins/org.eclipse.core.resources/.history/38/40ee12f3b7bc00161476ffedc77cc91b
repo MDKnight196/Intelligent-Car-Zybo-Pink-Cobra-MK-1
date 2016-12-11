@@ -1,0 +1,101 @@
+/*
+ * bluetooth.c
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#include "bluetooth.h"
+
+int bluetoothSetup(u16 DeviceId)
+{
+	int i, Status;
+	XUartPs_Config *Config;
+
+
+	/*
+	 * Initialize the UART driver so that it's ready to use.
+	 * Look up the configuration in the config table, then initialize it.
+	 */
+	Config = XUartPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Status = XUartPs_CfgInitialize(&bluetooth, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Check hardware build.
+	 */
+	Status = XUartPs_SelfTest(&bluetooth);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Use normal mode.
+	 */
+	XUartPs_SetOperMode(&bluetooth, XUARTPS_OPER_MODE_NORMAL);
+
+	/*
+	 * Initialize the send buffer bytes with a pattern and zero out
+	 * the receive buffer.
+	 */
+
+	for(i=0; i<BUFFER_SIZE; i++){
+		outputBuffer[i]=0;
+	}
+	inputBuffer=0;
+	//set time = 1
+	//XUartPs_SetRecvTimeout(&bluetooth, 1);
+	XUartPs_SetBaudRate(&bluetooth, 38400);
+	return XST_SUCCESS;
+}
+
+int addToString(float value, int index){
+	int digit[10];
+	int i=0;
+	int v;
+	if(!(value == (int)value)){
+		v=value*10;
+
+	}
+	else
+		v=value;
+
+	do{
+		digit[i]=v%10;
+		i++;
+		v /= 10;
+	}while(v > 0);
+	while(i > 0){
+		i--;
+		outputBuffer[index]=digit[i]+'0';
+		index++;
+		if(value == (int)value && i==0){
+			outputBuffer[index]='.';
+			index++;
+		}
+	}
+	outputBuffer[index]=' ';
+	index++;
+	return index;
+
+}
+
+int newline(int index){
+	outputBuffer[index-1]=';';
+	outputBuffer[index]='\r';
+	outputBuffer[index+1]='\n';
+	return index+=2;
+}
+
+void readData(XUartPs *uart, u8 *iBuffer, int numbytes){
+	XUartPs_Recv(uart, iBuffer, numbytes);
+}
+void writeData(XUartPs *uart, u8 *oBuffer, int numbytes){
+
+}

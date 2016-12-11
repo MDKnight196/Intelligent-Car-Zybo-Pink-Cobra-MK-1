@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\boot\Debug\boot.elf
+	C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug\PinkCobra_mk1.elf
+}

@@ -1,0 +1,34 @@
+/*
+ * operationalMode.h
+ *
+ *  Created on: Dec 7, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_OPERATIONALMODE_H_
+#define SRC_OPERATIONALMODE_H_
+
+#include "platform.h"
+#include "xil_types.h"
+#include "xsysmon.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "Xil_exception.h"
+#include "xttcps.h"
+#include "xil_io.h"
+
+
+void setStandbyMode();
+void setSpeedMode();
+void setAcuracyMode();
+void setDiscoveryMode();
+void setManualMode();
+void setFollowMode();
+void updateMode(opMode);
+void ModeOperation(XTtcPs ForwardPWM, XTtcPs BackwardPWM, XTtcPs ServoTimer, int PWMSignal, int center, int blackPixelCount);
+
+
+
+
+
+#endif /* SRC_OPERATIONALMODE_H_ */

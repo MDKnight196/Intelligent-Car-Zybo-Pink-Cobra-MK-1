@@ -1,0 +1,71 @@
+/*
+ * Pl_timer_intr_test.c
+ * http://www.xilinx.com/support/answers/50572.html
+ *
+ *  Created on: 2012-6-8
+ *      Author: yzhang
+ */
+
+#include <stdio.h>
+
+#include "interupts.h"
+#include "PIDcontroller.h"
+#include "platform.h"
+#include "xil_types.h"
+#include "xsysmon.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "Xil_exception.h"
+#include "xttcps.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "oLED.h"
+#include "xgpiops.h"
+
+//#define BTN_GPIO_ID			XPAR_AXI_GPIO_0_DEVICE_ID
+//#define GPIO_GPIO_ID		XPAR_AXI_GPIO_1_DEVICE_ID
+
+
+//#define INT_BTN_GPIO		XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+//#define INT_TIMER			XPAR_FABRIC_AXI_TIMER_2_INTERRUPT_INTR
+#define TIMER_ID			XPAR_AXI_TIMER_2_DEVICE_ID
+#define UART0_ID			XPAR_PS7_UART_0_DEVICE_ID
+#define UART1_ID			XPAR_PS7_UART_1_DEVICE_ID
+//#define IIC_ID				XPAR_PS7_I2C_0_DEVICE_ID
+
+//void print(char *str);
+extern char inbyte(void);
+
+
+int center = 0;
+int previousCenter=1;
+
+
+
+
+
+
+int main()
+{
+
+//Wait For interrupt;
+setupoLED(&rst, &rom, IIC_ID);
+//TTC
+init_PID(7, 0, 0, 423, -423, 63);
+
+setUpTTC();
+intrSetup();
+
+int PWMSignal=0;
+while(1)
+{
+}
+	cleanup_platform();
+	return 0;
+	}
+
+
+
+
+

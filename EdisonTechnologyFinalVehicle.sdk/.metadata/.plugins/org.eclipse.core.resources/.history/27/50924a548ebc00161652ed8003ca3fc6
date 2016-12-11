@@ -1,0 +1,39 @@
+/*
+ * interupts.h
+ *
+ *  Created on: Dec 5, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_INTERUPTS_H_
+#define SRC_INTERUPTS_H_
+#include <stdio.h>
+#include "platform.h"
+#include "xil_types.h"
+#include "xsysmon.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "Xil_exception.h"
+#include "xttcps.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xgpio.h"
+#include "oLed.h"
+#define GPIO_GPIO_ID	XPAR_AXI_GPIO_0_DEVICE_ID
+#define INT_GPIO		XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+
+XGpio btn;
+
+
+
+void SIHandler(void *data, u8 TmrCtrNumber);
+void clockHandler(void *data, u8 TmrCtrNumber);
+void  BTN_Intr_Handler(void *InstancePtr);
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+int ScuGicInterrupt_Init(u16 DeviceId);
+void setUPAxiTimers();
+XTtcPs setUpTTC();
+int getCenter();
+
+#endif /* SRC_INTERUPTS_H_ */

@@ -1,0 +1,22 @@
+/*
+ * bluetooth.h
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_BLUETOOTH_H_
+#define SRC_BLUETOOTH_H_
+
+#include "xuartps.h"
+
+#define BUFFER_SIZE 		100
+
+u8 outputBuffer[BUFFER_SIZE];
+u8 inputBuffer;
+
+int bluetoothSetup(u16 DeviceId, u8 *iBuffer, u8 *oBuffer, XUartPs *InstancePtr);
+int addToString(u8 *buffer, float value, int index);
+int newline(u8 *buffer, int index);
+
+#endif /* SRC_BLUETOOTH_H_ */

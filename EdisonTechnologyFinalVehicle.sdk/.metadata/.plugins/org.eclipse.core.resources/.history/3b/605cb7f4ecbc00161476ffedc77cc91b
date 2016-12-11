@@ -1,0 +1,19 @@
+/*
+ * hullEffect.h
+ *
+ *  Created on: Dec 6, 2016
+ *      Author: ulab
+ */
+
+#ifndef SRC_HULLEFFECT_H_
+#define SRC_HULLEFFECT_H_
+
+#define TIME_INTERVAL_MS 1000
+
+int intCnt;
+
+float getDIS(int intCnt);
+int calSpeed(int intCnt);
+
+
+#endif /* SRC_HULLEFFECT_H_ */

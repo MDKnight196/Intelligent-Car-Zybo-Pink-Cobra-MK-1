@@ -1,0 +1,70 @@
+/*
+ * Pl_timer_intr_test.c
+ * http://www.xilinx.com/support/answers/50572.html
+ *
+ *  Created on: 2012-6-8
+ *      Author: yzhang
+ */
+
+#include <stdio.h>
+
+#include "interupts.h"
+#include "PIDcontroller.h"
+#include "platform.h"
+#include "xil_types.h"
+#include "xsysmon.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "Xil_exception.h"
+#include "xttcps.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "oLED.h"
+#include "xgpiops.h"
+#include "pixy.h"
+#include "bluetooth.h"
+
+
+//void print(char *str);
+extern char inbyte(void);
+
+
+int center = 0;
+int previousCenter=1;
+
+
+int main()
+{
+
+init_PID(6.61, 0, 0, 423, -423, 63);
+
+bluetoothSetup(BLUETOOTH_ID);
+
+pixySetup(PIXY_ID);
+
+//Wait For interrupt;
+setupoLED();
+
+//TTC
+
+intrSetup();
+
+setUpTTC();
+
+setUPAxiTimers();
+
+
+int PWMSignal=0;
+while(1)
+{
+
+}
+	cleanup_platform();
+	return 0;
+	}
+
+
+
+
+
