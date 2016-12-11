@@ -17,6 +17,8 @@ void fitDIS(int readDIS){
 		distance++;
 	else if(readDIS<distance)
 		distance--;
+
+	return distance;
 }
 
 int getDIS(){

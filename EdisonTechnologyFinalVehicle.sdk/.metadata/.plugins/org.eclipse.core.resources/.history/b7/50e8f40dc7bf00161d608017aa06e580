@@ -144,9 +144,9 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 			k=0;
 			k=addToString(opMode, k);
 			k=addToString(direction, k);
-			k=addToString(getDIS(), k);
+			k=addToString(distance, k);
 
-			k=addToString(getDISTraveled(intCnt), k);
+			k=addToString(getDIS(intCnt), k);
 			k=addToString(calSpeed(intCnt), k);
 			k=newline( k);
 			//writeData(&bluetooth, &outputBuffer[0], k);
@@ -208,7 +208,7 @@ void GPIO_Intr_Handler(void *InstancePtr)
 
 	}
 	if((GPIO_value & 0b00000000111) == (btnLast | encoderLast) && opMode != 0){
-		fitDIS(GPIO_value>>3);
+		distance = getDIS(GPIO_value>>3);
 
 	}
 

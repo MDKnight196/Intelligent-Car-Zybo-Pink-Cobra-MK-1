@@ -17843,3 +17843,144 @@ arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
  116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
 'Finished building: PinkCobra_mk1.elf.size'
 ' '
+12:21:39 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+12:24:49 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+In file included from ../src/interupts.h:27:0,
+                 from ../src/PinkCorbra_mk1.c:11:
+../src/utrasonic.h:15:5: error: conflicting types for 'getDIS'
+ int getDIS();
+     ^
+In file included from ../src/interupts.h:26:0,
+                 from ../src/PinkCorbra_mk1.c:11:
+../src/hullEffect.h:15:7: note: previous declaration of 'getDIS' was here
+ float getDIS(int intCnt);
+       ^
+make: *** [src/PinkCorbra_mk1.o] Error 1
+12:26:54 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/hullEffect.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hullEffect.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hullEffect.d" -MT"src/hullEffect.o" -o "src/hullEffect.o" "../src/hullEffect.c"
+../src/hullEffect.c: In function 'calSpeed':
+../src/hullEffect.c:21:2: warning: implicit declaration of function 'getDIS' [-Wimplicit-function-declaration]
+  speed=(getDIS(intCnt)-getDIS(intCntlast))/TIME_INTERVAL_S;
+  ^
+'Finished building: ../src/hullEffect.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:147:18: error: 'distance' undeclared (first use in this function)
+    k=addToString(distance, k);
+                  ^
+../src/interupts.c:147:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:211:3: error: 'distance' undeclared (first use in this function)
+   distance = getDIS(GPIO_value>>3);
+   ^
+make: *** [src/interupts.o] Error 1
+12:27:13 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:211:3: error: 'distance' undeclared (first use in this function)
+   distance = getDIS(GPIO_value>>3);
+   ^
+../src/interupts.c:211:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/interupts.o] Error 1
+12:28:23 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+../src/utrasonic.c: In function 'fitDIS':
+../src/utrasonic.c:21:2: warning: 'return' with a value, in function returning void
+  return distance;
+  ^
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+12:28:43 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/utrasonic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utrasonic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utrasonic.d" -MT"src/utrasonic.o" -o "src/utrasonic.o" "../src/utrasonic.c"
+'Finished building: ../src/utrasonic.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116660	   4436	  24364	 145460	  23834	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '

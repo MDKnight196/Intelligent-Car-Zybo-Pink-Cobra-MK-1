@@ -7,18 +7,13 @@
 
 #include "utrasonic.h"
 
-
-int distance;
-
-void fitDIS(int readDIS){
+int fitDIS(int readDIS){
 	static int distance=0;
 
 	if(readDIS>distance)
 		distance++;
 	else if(readDIS<distance)
 		distance--;
-}
 
-int getDIS(){
 	return distance;
 }

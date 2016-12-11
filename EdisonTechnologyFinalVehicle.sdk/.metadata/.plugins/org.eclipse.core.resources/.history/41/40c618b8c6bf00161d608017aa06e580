@@ -9,9 +9,9 @@
 #define SRC_UTRASONIC_H_
 
 
+int distance;
 
+int fitDIS(int readDIS);
 
-void fitDIS(int readDIS);
-int getDIS();
 
 #endif /* SRC_UTRASONIC_H_ */

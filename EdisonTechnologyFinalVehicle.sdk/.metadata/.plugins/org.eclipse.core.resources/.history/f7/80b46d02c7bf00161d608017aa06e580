@@ -11,7 +11,7 @@
 //8 intCnt = rev
 
 float intCntlast=0;
-float getDISTraveled(int intCnt){
+float getDIS(int intCnt){
 	return (float)intCnt/16; // (((intCnt/8)*6)/12)
 }
 

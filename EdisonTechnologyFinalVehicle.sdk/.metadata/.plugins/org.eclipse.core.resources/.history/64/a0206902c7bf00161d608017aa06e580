@@ -12,7 +12,7 @@
 
 int intCnt;
 
-float getDISTraveled(int intCnt);
+float getDIS(int intCnt);
 float calSpeed(int intCnt);
 
 

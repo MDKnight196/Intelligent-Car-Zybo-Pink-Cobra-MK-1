@@ -208,7 +208,7 @@ void GPIO_Intr_Handler(void *InstancePtr)
 
 	}
 	if((GPIO_value & 0b00000000111) == (btnLast | encoderLast) && opMode != 0){
-		fitDIS(GPIO_value>>3);
+		distance = getDIS(GPIO_value>>3);
 
 	}
 
