@@ -1,15 +1,21 @@
-12:05:25 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+12:13:19 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
 ' '
 'Building file: ../src/interupts.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
-../src/interupts.c: In function 'clockHandler':
-../src/interupts.c:74:2: warning: implicit declaration of function 'isDebug' [-Wimplicit-function-declaration]
-  if (isDebug() == 1){
-  ^
 'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
 ' '
 'Building target: PinkCobra_mk1.elf'
 'Invoking: ARM v7 gcc linker'
@@ -23,5 +29,5 @@ arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
 'Finished building: PinkCobra_mk1.elf.size'
 ' '
 
-12:05:25 Build Finished (took 615ms)
+12:13:20 Build Finished (took 1s.20ms)
 

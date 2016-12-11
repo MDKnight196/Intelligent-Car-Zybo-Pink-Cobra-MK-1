@@ -182,3 +182,14 @@ dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
 // Tcl Message: launch_sdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf 
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk -hwspec C:/Users/ulab/Desktop/EdisonTechnologyFinalVehicle/EdisonTechnologyFinalVehicle.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
 // HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 37 MB. Current time: 12/11/16 11:54:17 AM EST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
