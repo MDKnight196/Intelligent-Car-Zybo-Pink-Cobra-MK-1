@@ -36,7 +36,6 @@ int opMode = 0;
 int opMode_select = STANDBY_IMAGE_NUM;
 int manSpeed=0;
 int manTurn=0;
-int sDir=0;
 float standardDivation=0;
 
 typedef struct {
@@ -144,19 +143,14 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 
 		if(cnt==5){
 			direction=getDirection(lastBlocks, &rBlocks[0], &cnt);
-			setPixyDir(direction);
-
-			if(direction != 0){
-				sDir=direction;
-			}
 		}
 
 		if(ms==50){
 			k=0;
 			k=addToString(getMode(), k);
-			k=addToString(sDir, k);
+			k=addToString(direction, k);
 			k=addToString(getDIS(), k);
-			sDir=0;
+
 			k=addToString(getDISTraveled(intCnt), k);
 			k=addToString(calSpeed(intCnt), k);
 			k=newline( k);
@@ -173,10 +167,6 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 		if(inputBuffer[0]=='^' && inputBuffer[1] == 'C' && inputBuffer[2]=='O' && inputBuffer[3] == 'N' && inputBuffer[4] =='N'){
 			setConnect(1);
 			}
-		else if(inputBuffer[0]=='^' && inputBuffer[1] =='D' && inputBuffer[2] == 'I' && inputBuffer[3] == 'S' && inputBuffer[4] == 'C' &&
-				inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N'){
-			setConnect(-1);
-		}
 		else if (inputBuffer[6] == '#'){
 			manSpeed=(inputBuffer[0] == '+' ? ((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0'):(-1*((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0')));
 			if(manSpeed>50){
@@ -192,7 +182,10 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 			}
 			setManualControl(manSpeed, manTurn);
 		}
-
+		else if(inputBuffer[0]=='^' && inputBuffer[1] =='D' && inputBuffer[2] == 'I' && inputBuffer[3] == 'S' && inputBuffer[4] == 'C' &&
+				inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N'){
+			setConnect(-1);
+		}
 	}
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);
@@ -204,6 +197,7 @@ void GPIO_Intr_Handler(void *InstancePtr)
 {
 	int GPIO_value=0;
 	static int GPIOLast=0;
+	static int encoderLast=0b000;
 
 	//disable GPIO interrupts
 	XGpio_InterruptDisable(&gpio, INT_GPIO);
@@ -214,15 +208,15 @@ void GPIO_Intr_Handler(void *InstancePtr)
 	}
 
 	GPIO_value = XGpio_DiscreteRead(&gpio, 1);
-	int test1 = GPIO_value & 0b00000000100;
-	int test2 = GPIOLast & 0b00000000100;
+	int test1 = GPIO_value & 0b00000000010;
+	int test2 = GPIOLast & 0b00000000010;
 	if ((GPIO_value & 0b00000000001) == 0 && (GPIOLast & 0b00000000001) == 1){
 		incModeSel();
 	}
 	else if((GPIO_value & 0b00000000010) == 0 && (GPIOLast & 0b00000000010) == 2){
 		updateMode();
 	}
-	else if((GPIO_value & 0b00000000100) != (GPIOLast & 0b00000000100) && getMode() != 0){
+	else if((GPIO_value & 0b00000000100) != encoderLast && opMode != 0){
 		intCnt++;
 	}
 	else{

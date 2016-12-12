@@ -154,9 +154,9 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 		if(ms==50){
 			k=0;
 			k=addToString(getMode(), k);
-			k=addToString(sDir, k);
+			k=addToString(direction, k);
 			k=addToString(getDIS(), k);
-			sDir=0;
+
 			k=addToString(getDISTraveled(intCnt), k);
 			k=addToString(calSpeed(intCnt), k);
 			k=newline( k);
@@ -173,10 +173,6 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 		if(inputBuffer[0]=='^' && inputBuffer[1] == 'C' && inputBuffer[2]=='O' && inputBuffer[3] == 'N' && inputBuffer[4] =='N'){
 			setConnect(1);
 			}
-		else if(inputBuffer[0]=='^' && inputBuffer[1] =='D' && inputBuffer[2] == 'I' && inputBuffer[3] == 'S' && inputBuffer[4] == 'C' &&
-				inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N'){
-			setConnect(-1);
-		}
 		else if (inputBuffer[6] == '#'){
 			manSpeed=(inputBuffer[0] == '+' ? ((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0'):(-1*((inputBuffer[1]-'0')*10)+(inputBuffer[2]-'0')));
 			if(manSpeed>50){
@@ -192,7 +188,10 @@ void TMR_Intr_Handler(void *data, u8 TmrCtrNumber)
 			}
 			setManualControl(manSpeed, manTurn);
 		}
-
+		else if(inputBuffer[0]=='^' && inputBuffer[1] =='D' && inputBuffer[2] == 'I' && inputBuffer[3] == 'S' && inputBuffer[4] == 'C' &&
+				inputBuffer[5]=='O' && inputBuffer[6] == 'N' && inputBuffer[7] =='N'){
+			setConnect(-1);
+		}
 	}
 	XTmrCtr_Stop(data,TmrCtrNumber);
 	XTmrCtr_Reset(data,TmrCtrNumber);

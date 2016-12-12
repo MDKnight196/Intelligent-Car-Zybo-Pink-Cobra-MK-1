@@ -19602,3 +19602,469 @@ arm-none-eabi-size boot.elf  |tee "boot.elf.size"
   78224	  12148	  74308	 164680	  28348	boot.elf
 'Finished building: boot.elf.size'
 ' '
+16:34:15 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:34:42 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/PinkCorbra_mk1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PinkCorbra_mk1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PinkCorbra_mk1.d" -MT"src/PinkCorbra_mk1.o" -o "src/PinkCorbra_mk1.o" "../src/PinkCorbra_mk1.c"
+'Finished building: ../src/PinkCorbra_mk1.c'
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117884	   4444	  24364	 146692	  23d04	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:35:18 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:146:4: warning: implicit declaration of function 'setDir' [-Wimplicit-function-declaration]
+    setDir(direction);
+    ^
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:213:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:212:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/interupts.o: In function `TMR_Intr_Handler':
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:146: undefined reference to `setDir'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PinkCobra_mk1.elf] Error 1
+16:35:41 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:213:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:212:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/interupts.o: In function `TMR_Intr_Handler':
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:146: undefined reference to `setPixyDir'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PinkCobra_mk1.elf] Error 1
+16:36:00 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/interupts.o: In function `TMR_Intr_Handler':
+C:\Users\ulab\Desktop\EdisonTechnologyFinalVehicle\EdisonTechnologyFinalVehicle.sdk\PinkCobra_mk1\Debug/../src/interupts.c:146: undefined reference to `setPixyDir'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PinkCobra_mk1.elf] Error 1
+16:37:04 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/operationalMode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/operationalMode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/operationalMode.d" -MT"src/operationalMode.o" -o "src/operationalMode.o" "../src/operationalMode.c"
+'Finished building: ../src/operationalMode.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+14:15:34 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:15:54 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:20:40 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:21:36 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:213:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:212:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:23:48 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:25:46 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:213:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:212:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:26:00 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:27:13 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000010;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000010;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:27:30 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:28:04 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:212:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:211:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:29:24 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:33:38 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hullEffect.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hullEffect.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hullEffect.d" -MT"src/hullEffect.o" -o "src/hullEffect.o" "../src/hullEffect.c"
+'Finished building: ../src/hullEffect.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117948	   4444	  24364	 146756	  23d44	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+16:33:46 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:38:12 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:45:57 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:26:20 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:148:21: error: expected ')' before '{' token
+    if(direction != 0{
+                     ^
+../src/interupts.c:151:3: error: expected expression before '}' token
+   }
+   ^
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:216:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:215:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+make: *** [src/interupts.o] Error 1
+17:26:26 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'TMR_Intr_Handler':
+../src/interupts.c:149:5: error: 'sDir' undeclared (first use in this function)
+     sDir=direction;
+     ^
+../src/interupts.c:149:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:216:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:215:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+make: *** [src/interupts.o] Error 1
+17:26:56 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:217:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:216:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118012	   4444	  24364	 146820	  23d84	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+17:27:21 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:217:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:216:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118012	   4444	  24364	 146820	  23d84	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+17:29:45 **** Auto Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PinkCobra_mk1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interupts.d" -MT"src/interupts.o" -o "src/interupts.o" "../src/interupts.c"
+../src/interupts.c: In function 'GPIO_Intr_Handler':
+../src/interupts.c:218:6: warning: unused variable 'test2' [-Wunused-variable]
+  int test2 = GPIOLast & 0b00000000100;
+      ^
+../src/interupts.c:217:6: warning: unused variable 'test1' [-Wunused-variable]
+  int test1 = GPIO_value & 0b00000000100;
+      ^
+'Finished building: ../src/interupts.c'
+' '
+'Building target: PinkCobra_mk1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PinkCobra_mk1_bsp/ps7_cortexa9_0/lib -o "PinkCobra_mk1.elf"  ./src/PIDcontroller.o ./src/PinkCorbra_mk1.o ./src/bluetooth.o ./src/hullEffect.o ./src/interupts.o ./src/oLED.o ./src/operationalMode.o ./src/pixy.o ./src/platform.o ./src/utrasonic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PinkCobra_mk1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PinkCobra_mk1.elf  |tee "PinkCobra_mk1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118012	   4444	  24364	 146820	  23d84	PinkCobra_mk1.elf
+'Finished building: PinkCobra_mk1.elf.size'
+' '
+17:33:31 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:36:10 **** Incremental Build of configuration Debug for project PinkCobra_mk1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:44:59 **** Auto Build of configuration Debug for project boot ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

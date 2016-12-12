@@ -18,7 +18,7 @@ float getDISTraveled(int intCnt){
 float calSpeed(int intCnt){
 	float speed=0;
 
-	speed=(getDISTraveled(intCnt)-getDISTraveled(intCntlast))/TIME_INTERVAL_S;
+	speed=(getDIS(intCnt)-getDIS(intCntlast))/TIME_INTERVAL_S;
 	intCntlast=intCnt;
 
 	return speed;

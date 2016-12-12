@@ -34,8 +34,6 @@ int MSpeed=0;
 int MDirection=0;
 int conn=-1;
 int distance;
-int pixyDir=0;
-
 void setStandbyMode(){
 	forwardValue=0;
 	backwardsValue =0;
@@ -253,9 +251,4 @@ void setManualControl(int speed, int direction){
 
 void setConnect(int Connect){
 	conn=Connect;
-}
-
-
-void setPixyDir(int dir){
-	pixyDir=dir;
 }
